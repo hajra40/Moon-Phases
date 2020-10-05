@@ -1,0 +1,299 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  background: #000;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.box {
+  display: flex;
+  position: relative;
+  width: 70vw;
+  height: 80vh;
+}
+
+.box img {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  opacity: 0;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.box img:nth-child(1){
+  top: 20%;
+  left: 35%;
+  transform: translate(-20%,-35%);
+  animation: phase 2s  linear;
+  animation-delay: 2s;
+}
+
+.box img:nth-child(2){
+  top: 45%;
+  left: 30%;
+  transform: translate(-45%,-30%);
+  animation: phase 2s  linear;
+}
+
+.box img:nth-child(3){
+  top: 20%;
+  left: 48%;
+  transform: translate(-20%,-48%);
+  animation: phase 2s  linear;
+  animation-delay: 4s;
+  
+}
+
+.box img:nth-child(4){
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  opacity: 1;
+  width: 300px;
+  height: 300px;
+}
+
+.box img:nth-child(5){
+  top: 66%;
+  left: 38%;
+  transform: translate(-66%,-38%) rotate(180deg);
+  animation: phase 2s  linear;
+  animation-delay: 14s;
+}
+
+.box img:nth-child(6){
+  top: 80%;
+  left: 51%;
+  transform: translate(-70%,-51%);
+  animation: phase 2s  linear;
+  animation-delay: 12s;
+}
+
+.box img:nth-child(7){
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%,-70%);
+  animation: phase 2s  linear;
+  animation-delay: 8s;
+}
+
+.box img:nth-child(8){
+  top: 25%;
+  left: 63%;
+  transform: translate(-25%,-63%);
+  animation: phase 2s  linear;
+  animation-delay: 6s;
+}
+.box img:nth-child(9){
+  top: 70%;
+  left: 66%;
+  transform: translate(-70%,-66%);
+  animation: phase 2s  linear;
+  animation-delay: 10s;
+}
+
+@keyframes phase {
+  0%{
+    opacity: 0;
+  }
+  80%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+
+.starbox img {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  animation: stars 5s infinite linear;
+
+}
+
+.starbox img:nth-child(1){
+  top: 10vh;
+  left: 10vw;
+  animation-delay: 0.25s;
+}
+
+.starbox img:nth-child(2){
+  top: 50vh;
+  left: 10vw;
+  animation-delay: 0.55s;
+}
+
+.starbox img:nth-child(3){
+  top: 70vh;
+  left: 20vw;
+  animation-delay: 0.75s;
+}
+
+.starbox img:nth-child(4){
+  top: 10vh;
+  left: 90vw;
+  animation-delay: 1.25s;
+}
+
+.starbox img:nth-child(5){
+  top: 54vh;
+  left: 97vw;
+  animation-delay: 1s;
+  
+}
+
+.starbox img:nth-child(6){
+  top: 15vh;
+  left: 79vw;
+  animation-delay: 1.65s;
+}
+
+.starbox img:nth-child(7){
+  top: 90vh;
+  left: 11vw;
+  animation-delay: 2s;
+}
+
+.starbox img:nth-child(8){
+  top: 30vh;
+  left: 80vw;
+  animation-delay: 1.25s;
+}
+
+.starbox img:nth-child(9){
+  top: 70vh;
+  left: 80vw;
+  animation-delay: 2.25s;
+}
+
+.starbox img:nth-child(10){
+  top: 80vh;
+  left: 60vw;
+  animation-delay: 2.75s;
+}
+
+.starbox img:nth-child(11){
+  top: 60vh;
+  left: 70vw;
+  animation-delay: 2s;
+}
+
+.starbox img:nth-child(12){
+  top: 90vh;
+  left: 40vw;
+  animation-delay: 1.35s;
+}
+
+.starbox img:nth-child(13){
+  top: 5vh;
+  left: 50vw;
+  animation-delay: 3s;
+}
+
+.starbox img:nth-child(14){
+  top: 20vh;
+  left: 30vw;
+  animation-delay: 3.25s;
+}
+
+.starbox img:nth-child(15){
+  width: 80px;
+  height: 80px;
+  animation: shootingStar 10s infinite linear;
+  transition: 2s;
+}
+
+@keyframes stars {
+  0%{
+    transform: scale(0);
+  }
+  100%{
+    transform: scale(2);
+  }
+}
+
+@keyframes shootingStar {
+  0%{
+    right: 0;
+    top: 10vh;
+    transform: scale(1);
+
+  }
+  10% {
+    right: 10vw;
+    top: 13vh;
+    transform: scale(1);
+
+  }
+  20% {
+    right: 20vw;
+    top: 16vh;
+    transform: scale(1);
+
+  }
+  30% {
+    right: 30vw;
+    top: 19vh;
+    transform: scale(1);
+  }
+  40% {
+    right: 40vw;
+    top: 23vh;
+    transform: scale(1.5);
+
+  }
+  50% {
+    right: 50vw;
+    top: 26vh;
+    transform: scale(1.5);
+
+  }
+  60% {
+    right: 60vw;
+    top: 30vh;
+    transform: scale(1.5);
+
+  }
+  70% {
+    right: 70vw;
+    top: 32vh;
+    transform: scale(1.8);
+
+  }
+  80% {
+    right: 80vw;
+    top: 35vh;
+    transform: scale(1.8);
+
+  }
+  90% {
+    right: 90vw;
+    top: 37vh;
+    transform: scale(1.8);
+
+  }
+  100% {
+    right: 100vw;
+    top: 40vh;
+    transform: scale(2);
+
+  }
+  
+}
+
